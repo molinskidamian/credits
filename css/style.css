@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 body {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
@@ -17,7 +19,10 @@ article.calendar .calendar-header-up {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10px;
-  background-color: #2ea2f8;
+  height: 60px;
+  background: #1891eb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1891eb), to(#2fa0f8));
+  background: linear-gradient(0deg, #1891eb 0%, #2fa0f8 100%);
 }
 
 article.calendar .calendar-header-up--left h2.calendar-title {
@@ -30,12 +35,23 @@ article.calendar .calendar-header-up--right .calendar-header--menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
 article.calendar .calendar-header-up--right .calendar-header--menu .calendar-header--item {
   border: 1px solid #1d8fe3;
-  margin: 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+article.calendar .calendar-header-up--right .calendar-header--menu .calendar-header--item:hover {
+  background: none;
 }
 
 article.calendar .calendar-header-up--right .calendar-header--menu .calendar-header--item a {
@@ -46,5 +62,65 @@ article.calendar .calendar-header-up--right .calendar-header--menu .calendar-hea
 
 article.calendar .calendar-header-up--right .calendar-header--menu .calendar-header--item a:hover {
   color: #fff;
+}
+
+article.calendar .calendar-header-down {
+  background-color: #222c3c;
+  color: #fff;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+article.calendar .calendar-header-down i {
+  font-size: 1.4rem;
+}
+
+article.calendar .content-header-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+article.calendar .content-header-week p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  color: #adafb2;
+}
+
+article.calendar .content-week {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+}
+
+article.calendar .content-week .item {
+  border: 1px solid #e7e9ed;
+  height: 120px;
+  width: 100%;
+  text-align: right;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
