@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/default.css" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Calendar</title>
@@ -24,7 +25,7 @@
                                 <a href="#">Week</a>
                             </li>
                             <li class="calendar-header--item">
-                                <a href="#">Month</a>
+                                <a class="current" href="#">Month</a>
                             </li>
                             <li class="calendar-header--item">
                                 <a href="#">Year</a>
@@ -34,7 +35,10 @@
                 </div>
                 <div class="calendar-header-down">
                     <i class="fas fa-chevron-circle-left"></i>
-                    <h3>April 2016</h3>
+                    <h3>
+                        <span class="current-month">April</span>
+                        <span class="current-year">2016</span>
+                    </h3>
                     <i class="fas fa-chevron-circle-right"></i>
                 </div>
             </header>
@@ -48,41 +52,111 @@
                 <p>Sunday</p>
             </div>
             <div class="content-week">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
-                <div class="item">4</div>
-                <div class="item">5</div>
-                <div class="item">6</div>
-                <div class="item">7</div>
-                <div class="item">8</div>
-                <div class="item">9</div>
-                <div class="item">10</div>
-                <div class="item">11</div>
-                <div class="item">12</div>
-                <div class="item">13</div>
-                <div class="item">14</div>
-                <div class="item">15</div>
-                <div class="item">16</div>
-                <div class="item">17</div>
-                <div class="item">18</div>
-                <div class="item">19</div>
-                <div class="item">20</div>
-                <div class="item">21</div>
-                <div class="item">22</div>
-                <div class="item">23</div>
-                <div class="item">24</div>
-                <div class="item">25</div>
-                <div class="item">26</div>
-                <div class="item">27</div>
-                <div class="item">28</div>
-                <div class="item">29</div>
-                <div class="item">30</div>
-                <div class="item">31</div>
-                <div class="item">32</div>
-                <div class="item">33</div>
-                <div class="item">34</div>
-                <div class="item">35</div>
+                <div class="item">
+                    <p>1</p>
+                </div>
+                <div class="item">
+                    <p>2</p>
+                </div>
+                <div class="item">
+                    <p>3</p>
+                </div>
+                <div class="item">
+                    <p>4</p>
+                </div>
+                <div class="item">
+                    <p>5</p>
+                </div>
+                <div class="item">
+                    <p>6</p>
+                </div>
+                <div class="item">
+                    <p>7</p>
+                </div>
+                <div class="item">
+                    <p>8</p>
+                </div>
+                <div class="item">
+                    <p>9</p>
+                </div>
+                <div class="item">
+                    <p>10</p>
+                </div>
+                <div class="item">
+                    <p>11</p>
+                </div>
+                <div class="item">
+                    <p>12</p>
+                </div>
+                <div class="item">
+                    <p>13</p>
+                </div>
+                <div class="item">
+                    <p>14</p>
+                </div>
+                <div class="item">
+                    <p>15</p>
+                </div>
+                <div class="item">
+                    <p>16</p>
+                </div>
+                <div class="item">
+                    <p>17</p>
+                </div>
+                <div class="item">
+                    <p>18</p>
+                </div>
+                <div class="item">
+                    <p>19</p>
+                </div>
+                <div class="item">
+                    <p>20</p>
+                </div>
+                <div class="item">
+                    <p>21</p>
+                </div>
+                <div class="item">
+                    <p>22</p>
+                </div>
+                <div class="item">
+                    <p>23</p>
+                </div>
+                <div class="item">
+                    <p>24</p>
+                </div>
+                <div class="item">
+                    <p>25</p>
+                </div>
+                <div class="item">
+                    <p>26</p>
+                </div>
+                <div class="item">
+                    <p>27</p>
+                </div>
+                <div class="item">
+                    <p>28</p>
+                </div>
+                <div class="item">
+                    <p>29</p>
+                </div>
+                <div class="item">
+                    <p>30</p>
+                </div>
+                <div class="item">
+                    <p>31</p>
+                </div>
+                <div class="item">
+                    <p>32</p>
+                </div>
+                <div class="item">
+                    <p>33</p>
+                </div>
+                <div class="item">
+                    <p>34</p>
+                </div>
+                <div class="item">
+                    <p>35</p>
+                </div>
             </div>
         </article>
 
@@ -90,5 +164,7 @@
             src="https://kit.fontawesome.com/6e30b4ae66.js"
             crossorigin="anonymous"
         ></script>
+        <script src="./js/calendar.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>

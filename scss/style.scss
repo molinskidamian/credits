@@ -58,6 +58,12 @@ article.calendar {
                             color: #fff;
                         }
                     }
+
+                    .current {
+                        background: red;
+                        color: white;
+                        background: transparent;
+                    }
                 }
             }
         }
@@ -111,7 +117,13 @@ article.calendar {
             // margin: 10px 10px 0 0;
             font-weight: 500;
             font-size: 1.2rem;
-            
+            position: relative;
+
+            p {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
         }
     }
 }

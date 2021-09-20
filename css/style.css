@@ -64,6 +64,12 @@ article.calendar .calendar-header-up--right .calendar-header--menu .calendar-hea
   color: #fff;
 }
 
+article.calendar .calendar-header-up--right .calendar-header--menu .calendar-header--item .current {
+  background: red;
+  color: white;
+  background: transparent;
+}
+
 article.calendar .calendar-header-down {
   background-color: #222c3c;
   color: #fff;
@@ -122,5 +128,12 @@ article.calendar .content-week .item {
   text-align: right;
   font-weight: 500;
   font-size: 1.2rem;
+  position: relative;
+}
+
+article.calendar .content-week .item p {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
