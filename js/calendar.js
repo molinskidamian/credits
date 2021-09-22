@@ -1,39 +1,26 @@
 function Calendar() {
     const date = new Date();
+    const prevMonthBtn = document.querySelector(".fa-chevron-circle-left");
+    const nextMonthBtn = document.querySelector(".fa-chevron-circle-right");
 
-    this.prevMonth = docuemtn.querySelector(".fa-chevron-circle-left");
-    this.nextMonth = docuemtn.querySelector(".fa-chevron-circle-rigth");
+    const months = [
+        "Styczeń",
+        "Luty",
+        "Marzec",
+        "Kwiecień",
+        "Maj",
+        "Czerwiec",
+        "Lipiec",
+        "Sierpień",
+        "Wrzesień",
+        "Październik",
+        "Listopad",
+        "Grudzień",
+    ];
 }
 
+Calendar.prototype.nextMonth = function () {};
 
-
-Calendar.prototype.nextMonth = function () {
-
-}
-
-
-
-
-
-
-
+Calendar.prototype.prevMonth = function () {};
 
 // const date = new Date();
-
-// console.log(date.getFullYear());
-// console.log(date.getUTCMonth());
-
-// montsName = [
-//     "Styczeń",
-//     "Luty",
-//     "Marzec",
-//     "Kwiecień",
-//     "Maj",
-//     "Czerwiec",
-//     "Lipiec",
-//     "Sierpień",
-//     "Wrzesień",
-//     "Październik",
-//     "Listopad",
-//     "Grudzień",
-// ];
